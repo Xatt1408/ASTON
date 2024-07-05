@@ -1,6 +1,5 @@
 package org.example;
 
-
 public class FactorialCalculator {
     public long factorial(int number) {
         if (number < 0) {

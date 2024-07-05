@@ -1,32 +1,29 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
-public class FactorialCalculatorTest {
+public class  FactorialCalculatorTest {
 
     private final FactorialCalculator calculator = new FactorialCalculator();
 
     @Test
     public void testFactorialOfOne() {
-        assertEquals(1, calculator.factorial(1), "\n" + "Факториал 1 = 1");
+        assertEquals(calculator.factorial(1), 1, "Факториал 1 = 1");
     }
 
     @Test
     public void testFactorialOfPositiveNumber() {
-        assertEquals(120, calculator.factorial(5), "\n" +"Факториал 5 = 1");
+        assertEquals(calculator.factorial(5), 120, "Факториал 5 = 120");
     }
 
     @Test
     public void testFactorialOfLargeNumber() {
-        assertEquals(3628800, calculator.factorial(10), "Факториал 10 = 3628800");
+        assertEquals(calculator.factorial(10), 3628800, "Факториал 10 = 3628800");
     }
 
-    @Test
+    @Test(expectedExceptions = IllegalArgumentException.class, expectedExceptionsMessageRegExp = "Число должно быть неотрицательным.")
     public void testFactorialOfNegativeNumber() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            calculator.factorial(-1);
-        });
-        assertEquals("Число должно быть неотрицательным.", exception.getMessage());
+        calculator.factorial(-1);
     }
 }
