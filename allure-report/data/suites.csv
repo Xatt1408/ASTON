@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 15 14:53:13 GMT-12:00 2024","Mon Jul 15 14:53:20 GMT-12:00 2024","7354","","MtsAllure","","MtsAllure","FieldsTetionSumMobile","Корректность отображения суммы, номера телефона, плейсхолдеров для ввода реквизитов карты, наличие иконок платёжных систем.",""
+"passed","Mon Jul 15 14:53:13 GMT-12:00 2024","Mon Jul 15 14:53:13 GMT-12:00 2024","213","","MtsAllure","","MtsAllure","emptyFieldsTestDebt","Проверка плейсхолдеров полей 'Задолженность'",""
+"passed","Mon Jul 15 14:53:11 GMT-12:00 2024","Mon Jul 15 14:53:12 GMT-12:00 2024","769","","MtsAllure","","MtsAllure","emptyFieldsTestInternet","Проверка плейсхолдеров полей 'Домашний интернет'",""
+"passed","Mon Jul 15 14:53:12 GMT-12:00 2024","Mon Jul 15 14:53:12 GMT-12:00 2024","231","","MtsAllure","","MtsAllure","emptyFieldsTestInstallment","Проверка плейсхолдеров полей 'Рассрочка'",""
+"passed","Mon Jul 15 14:53:12 GMT-12:00 2024","Mon Jul 15 14:53:13 GMT-12:00 2024","854","","MtsAllure","","MtsAllure","emptyFieldsTestConnection","Проверка плейсхолдеров полей 'Услуги связи'",""
